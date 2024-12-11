@@ -2,5 +2,5 @@
 
 This is a basic page using a Jekyll theme.
 
-- [About Me](about.html)
-- [Contact](contact.html)
+- [About Me](about.md)
+- [Contact](contact.md)
