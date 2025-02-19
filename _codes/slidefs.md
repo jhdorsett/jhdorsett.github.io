@@ -33,6 +33,7 @@ The remaining steps are all conducted in the main SliDeFS folder.
 
 
 
+<iframe src="/assets/src/slidefs/interactive_slidefs.html" width="100%" height="500px"></iframe>
 
 
 
