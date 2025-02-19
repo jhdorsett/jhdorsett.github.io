@@ -1,0 +1,21 @@
+/* banner.css */
+/* NOT CURRENTLY USED. I copied into main.css for now... */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,10 @@
+<div style="overflow: hidden; margin-bottom: 40px;">
+    {% if include.image %}
+    <img src="{{ include.image }}" width="200" style="float: left; margin-right: 15px; margin-bottom: 10px;">
+    {% endif %}
+    <h3 style="margin-top: 0;">{{ include.title }}</h3>
+    <p>{{ include.description | markdownify | strip_newlines }}</p>
+    {% if include.link %}
+    <a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">Link.</a>
+    {% endif %}
+</div>
