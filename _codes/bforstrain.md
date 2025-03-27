@@ -61,7 +61,7 @@ BforStrain
 
 Here is a particular model realization generated using the western US geodetic data and fault configuration. The mesh is colored by max shear strain rate in each triangle. Geodetic observations and modeled velocities are shown as vectors, where each data point is the average of all GPS stations in that triangle. 
 
-<iframe src="/assets/src/bforstrain_maxshear.html" width="100%" height="500px"></iframe>
+<iframe src="/assets/src/bforstrain/bforstrain_maxshear.html" width="100%" height="500px"></iframe>
 
 
 This model is displaying the mean values for a suite run with three different damping parameters: 

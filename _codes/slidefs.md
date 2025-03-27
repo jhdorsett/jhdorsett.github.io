@@ -13,6 +13,8 @@ link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=564
 
 SliDeFS (Slip Deficit From Strain) is a method for inverting surface strain rate components for slip deficit rate on faults as described in Johnson et al. (2024, see citation at bottom). The most recent release of SliDeFS inverts for slip deficit rates on faults and distributed moment sources. Faults are discretized into rectangular slip patches and the Okada (1985) solution is used to relate slip deficit rate (backslip) to surface strain rates (Exx, Exy, Eyy). Off-fault moment sources are represented with analytical solutions for force couples in a thin elastic plate (plane stress elasticity). The inversion is a bounded least squares inversion with optional spatial smoothing of slip deficit rate and damping of moment sources. Gaussian or truncated Gaussian priors on slip deficit rate can be included. Strain rates are computed on a triangular mesh constructed from surface traces of the fault model to minimize strain singularity artifacts. Details are provided in Johnson et al. (2022). Moment sources are computed at nodes of the same triangular mesh used for the slip deficit rate calculations. This mesh can be quite dense in areas of fault complexity. It would not be difficult to modify the code to utilize a different, simpler, mesh for the moment sources, but this has not been coded into the current release. 
 
+<iframe src="/assets/src/slidefs/interactive_slidefs.html" width="100%" height="500px"></iframe>
+
 A brief listing of the workflow steps is provided here followed by more detailed explanations below. 
 
 1. Prepare fault geometry and create FaultInfo mat file. Prepare strain rate observation file (text file) with columns
@@ -29,12 +31,6 @@ The remaining steps are all conducted in the main SliDeFS folder.
 7. (optional) Run sample_posterior.m to compute posterior distribution of slip deficit rate.  (minutes to hours depending on size of problem)
 8. (optional – requires step 7) Run plot_slip_rates_along_faults.m to visualize depth-averaged slip deficit rates along specified faults. 
 9. (optional – requires step 7) Run plot_moment_sources.m to visualize the spatial distribution of principal moment rate sources and uncertainties. 
-
-
-
-
-<iframe src="/assets/src/slidefs/interactive_slidefs.html" width="100%" height="500px"></iframe>
-
 
 
 More detailed description of workflow. 
