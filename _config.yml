@@ -22,7 +22,9 @@ title: Crustal Deformation @ IU
 email: kajjohns@iu.edu
 description: We are researching crustal tectonics with a focus on...
 
-remote_theme: "jekyll/minima@1e8a445"
+# dont use this for github io hosting
+# remote_theme: "jekyll/minima@1e8a445"
+
 sass:
   quiet_deps: true
 # >- # this means to ignore newlines
