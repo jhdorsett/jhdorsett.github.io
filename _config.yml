@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Crustal Deformation @ IU
-email: kajjohns@iu.edu
-description: We are researching crustal tectonics with a focus on...
+title: Jake Dorsett
+email: jacob.h.dorsett@gmail.com
+description: I am a quantitative scientist working on geophysical, geospatial, and data science problems.
 
 # dont use this for github io hosting
 # remote_theme: "jekyll/minima@1e8a445"
@@ -31,7 +31,7 @@ sass:
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  kajjohns
+github_username:  jhdosett
 
 # Build settings
 theme: minima
@@ -49,6 +49,9 @@ collections:
   codes:
     output: true
     permalink: /codes/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
     
 # these lines allow the website to use Latex for math
 kramdown:
